@@ -28,12 +28,7 @@ import javax.jms.TextMessage;
  *
  * @author Len Payne <len.payne@lambtoncollege.ca>
  */
-@MessageDriven(mappedName = "jms/Queue", activationConfig = {
-    @ActivationConfigProperty(propertyName = "acknowledgeMode",
-                                propertyValue = "Auto-acknowledge"),
-    @ActivationConfigProperty(propertyName = "destinationType",
-                                propertyValue = "javax.jms.Queue")
-})
+@MessageDriven(mappedName = "jms/Queue")
 public class MOTDChangeBean implements MessageListener {
     @EJB
     MOTDBean motd;
