@@ -15,7 +15,6 @@
  */
 package beans;
 
-import java.io.Serializable;
 import javax.ejb.Stateful;
 
 /**
@@ -23,7 +22,7 @@ import javax.ejb.Stateful;
  * @author Len Payne <len.payne@lambtoncollege.ca>
  */
 @Stateful
-public class LoginBean implements Serializable {
+public class LoginBean {
 
     String name = "";
 
